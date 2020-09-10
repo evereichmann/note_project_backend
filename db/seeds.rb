@@ -7,13 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+
 ToDo.destroy_all
 
-User.create(id: 1, username: "evereichmann" , password_digest: "1234password",first_name: "Eve" ,last_name: "Reichmann")
-User.create(id: 2, username: "aceujimori" , password_digest: "1234password",first_name: "Ace" ,last_name: "Ujimori")
+User.create(id: 1, username: 'evereichmann', password: '1234password', first_name: 'Eve', last_name: 'Reichmann')
+User.create(id: 2, username: 'aceujimori', password: '1234password', first_name: 'Ace', last_name: 'Ujimori')
 
-ToDo.create(title: "Chores",content: "Laundry, Sweep, and Mop",urgent: false ,user_id: 1)
-ToDo.create(title: "Chores",content: "Water plants, Dishes, and Take the garbage out",urgent: false,user_id: 2)
-ToDo.create(title: "Programming",content: "Work on Mod 4 Project",urgent: true ,user_id: 1)
-ToDo.create(title: "Work",content: "Tracking board layout, and Mapping function",urgent: true,user_id: 2)
-ToDo.create(title: "Business",content: "Add images to website",urgent: false ,user_id: 2)
+ToDo.create(title: 'Chores', content: 'Laundry, Sweep, and Mop', urgent: false, user_id: 1)
+ToDo.create(title: 'Chores', content: 'Water plants, Dishes, and Take the garbage out', urgent: false, user_id: 2)
+ToDo.create(title: 'Programming', content: 'Work on Mod 4 Project', urgent: true, user_id: 1)
+ToDo.create(title: 'Work', content: 'Tracking board layout, and Mapping function', urgent: true, user_id: 2)
+ToDo.create(title: 'Business', content: 'Add images to website', urgent: false, user_id: 2)
