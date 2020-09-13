@@ -10,8 +10,8 @@ User.destroy_all
 
 ToDo.destroy_all
 
-User.create(id: 1, username: 'evereichmann', password: '1234password', first_name: 'Eve', last_name: 'Reichmann')
-User.create(id: 2, username: 'aceujimori', password: '1234password', first_name: 'Ace', last_name: 'Ujimori')
+User.create(username: 'evereichmann', password: '1234password', first_name: 'Eve', last_name: 'Reichmann')
+User.create(username: 'aceujimori', password: '1234password', first_name: 'Ace', last_name: 'Ujimori')
 
 ToDo.create(title: 'Chores', content: 'Laundry, Sweep, and Mop', urgent: false, user_id: 1)
 ToDo.create(title: 'Chores', content: 'Water plants, Dishes, and Take the garbage out', urgent: false, user_id: 2)
